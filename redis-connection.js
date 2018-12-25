@@ -1,7 +1,9 @@
-import redis from "ioredis";
-import config from "./config";
+"use strict";
 
-export default class RedisConnection {
+const redis = require("ioredis");
+const config = require("./config");
+
+module.exports = class RedisConnection {
     constructor() {
         this.client = this.connect();
     }
@@ -33,6 +35,6 @@ export default class RedisConnection {
     }
 
     async set(key, value){
-        return await this.client.set(key, value, "EX", config.redis.time_live);
+        return await this.client.set(key, value);
     }
 }

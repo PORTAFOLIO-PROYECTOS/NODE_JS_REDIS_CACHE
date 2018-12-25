@@ -1,11 +1,11 @@
 const config = {
     redis: {
         port: 6379,
-        host: "127.0.0.1",
+        host: "localhost",
         retries: 3,
         time_to_retry: 100,
-        time_live: 86400 // tiempo de vida en segundos
+        time_live: 3600 // tiempo de vida en segundos
     }
 }
 
-export default config;
+module.exports = config;
