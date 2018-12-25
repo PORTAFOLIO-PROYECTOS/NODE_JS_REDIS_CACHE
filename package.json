@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/PORTAFOLIO-PROYECTOS/NODE_JS_REDIS_CACHE#readme",
   "dependencies": {
-    "redis": "^2.8.0"
+    "ioredis": "^4.3.0"
   }
 }

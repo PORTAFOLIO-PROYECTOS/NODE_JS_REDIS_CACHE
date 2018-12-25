@@ -1,4 +1,10 @@
+import redis from "./redis-connection";
+
 (() => {
+    
+})();
+
+/*(() => {
     'use strict';
 
     const redis = require('redis'),
@@ -19,4 +25,4 @@
     });
     //- FinObteniendo Valor
 
-})();
+})();*/
